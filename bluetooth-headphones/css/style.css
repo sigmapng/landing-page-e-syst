@@ -12,21 +12,31 @@ body {
 
 .container {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
 }
 
 header {
   font-family: "Roboto Mono", monospace;
   background-color: #333;
   color: #f8f8f8;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
 footer {
   background-color: #333;
   color: #f8f8f8;
-  padding: 10px;
+  padding: 20px 0;
   text-align: center;
+  font-size: 0.9rem;
+}
+
+footer span {
+  display: block;
+  margin: 5px 0;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -61,6 +71,15 @@ section {
   justify-content: center;
   align-items: initial;
   padding: 50px 30px;
+  flex: 1;
+}
+
+.main-links {
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  margin: 15px 0;
+  font-size: 1.1rem;
 }
 
 img {
@@ -77,6 +96,16 @@ ul {
 
 ul li {
   margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: rgba(51, 51, 51, 0.6196078431);
+  transition: ease-in-out 0.3s;
 }
 
 button {
@@ -102,55 +131,44 @@ button:hover {
 }
 
 @media (max-width: 1200px) {
-
   header,
   section,
   footer {
     padding: 15px;
   }
 }
-
 @media (max-width: 992px) {
-
   header,
   section,
   footer {
     padding: 10px;
   }
-
   body {
     font-size: 14px;
   }
 }
-
 @media (max-width: 768px) {
-
   header,
   section,
   footer {
     padding: 8px;
     text-align: left;
   }
-
   body {
     font-size: 12px;
   }
 }
-
 @media (max-width: 576px) {
-
   header,
   section,
   footer {
     padding: 5px;
     text-align: left;
   }
-
   body {
     font-size: 10px;
   }
-}
-
+} 
 header,
 footer {
   background-color: #142f4a;
@@ -159,9 +177,6 @@ footer {
 button {
   background-color: #1c4e7c;
 }
-
 button:hover {
   background-color: #2859a8;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

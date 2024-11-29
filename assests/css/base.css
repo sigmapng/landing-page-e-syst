@@ -74,11 +74,16 @@ section {
 }
 
 .main-links {
+  color: rgba(51, 51, 51, 0.6196078431);
   font-weight: bold;
   text-align: center;
   font-family: "Roboto Mono", monospace;
   margin: 15px 0;
   font-size: 1.1rem;
+}
+.main-links:hover {
+  text-decoration: underline;
+  transition: ease-in-out 0.3s;
 }
 
 img {

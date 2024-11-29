@@ -84,11 +84,17 @@ section {
 }
 
 .main-links {
+  color: $primary-hover-color;
   font-weight: bold;
   text-align: center;
   font-family: $font-family-header;
   margin: 15px 0;
   font-size: 1.1rem;
+
+  &:hover {
+    text-decoration: underline;
+    transition: $hover-transition;
+  }
 }
 
 img {
