@@ -19,7 +19,6 @@
 
 - HTML
 - CSS (SCSS)
-- JavaScript
 
 ## Інструкції для запуску
 
