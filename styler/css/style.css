@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #f8f8f8;
+  min-height: 100%;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+header {
+  font-family: "Roboto Mono", monospace;
+  background-color: #333;
+  color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: "Roboto Mono", monospace;
+  margin: 10px 0;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+h2,
+h3 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 10px 0;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: initial;
+  padding: 50px 30px;
+}
+
+img {
+  width: 40%;
+  border-radius: 4px;
+  margin: 15px 0;
+  align-self: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+button {
+  align-self: center;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #f8f8f8;
+}
+
+button:hover {
+  transition: ease-in-out 0.3s;
+}
+
+.reviews-section p {
+  border: #333 0.5px solid;
+  padding: 15px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+
+  header,
+  section,
+  footer {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  header,
+  section,
+  footer {
+    padding: 10px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header,
+  section,
+  footer {
+    padding: 8px;
+    text-align: left;
+  }
+
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  header,
+  section,
+  footer {
+    padding: 5px;
+    text-align: left;
+  }
+
+  body {
+    font-size: 10px;
+  }
+}
+
+header,
+footer {
+  background-color: #4a2f4a;
+}
+
+button {
+  background-color: #e67ec2;
+}
+
+button:hover {
+  background-color: #d354a0;
+}
+
+/*# sourceMappingURL=style.css.map */

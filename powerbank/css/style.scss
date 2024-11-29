@@ -1,0 +1,18 @@
+@use '../../assests/css/base.css';
+
+$primary-powerbank-bg-color: #4a2f14;
+$primary-powerbank-accent-color: #e67e22;
+$primary-powerbank-accent-color-hover: #d35400;
+
+header,
+footer {
+  background-color: $primary-powerbank-bg-color;
+}
+
+button {
+  background-color: $primary-powerbank-accent-color;
+
+  &:hover {
+    background-color: $primary-powerbank-accent-color-hover;
+  }
+}

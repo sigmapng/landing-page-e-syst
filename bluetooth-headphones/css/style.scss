@@ -1,0 +1,18 @@
+@use '../../assests/css/base.css';
+
+$primary-headphones-bg-color: #142f4a;
+$primary-headphones-accent-color: #1c4e7c;
+$primary-headphones-accent-color-hover: #2859a8;
+
+header,
+footer {
+  background-color: $primary-headphones-bg-color;
+}
+
+button {
+  background-color: $primary-headphones-accent-color;
+
+  &:hover {
+    background-color: $primary-headphones-accent-color-hover;
+  }
+}

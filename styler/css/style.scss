@@ -1,0 +1,18 @@
+@use '../../assests/css/base.css';
+
+$primary-styler-bg-color: #4a2f4a;
+$primary-styler-accent-color: #e67ec2;
+$primary-styler-accent-color-hover: #d354a0;
+
+header,
+footer {
+  background-color: $primary-styler-bg-color;
+}
+
+button {
+  background-color: $primary-styler-accent-color;
+
+  &:hover {
+    background-color: $primary-styler-accent-color-hover;
+  }
+}
