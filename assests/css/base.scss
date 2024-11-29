@@ -12,6 +12,13 @@ $hover-transition: ease-in-out 0.3s;
   align-items: $align;
 }
 
+@mixin nav-parts {
+  background-color: $primary-bg-color;
+  color: $secondary-color;
+  padding: 20px 0;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,21 +33,22 @@ body {
 
 .container {
   min-height: 100vh;
+  @include flex-settings(column, initial, initial);
 }
 
 header {
   font-family: $font-family-header;
-  background-color: $primary-bg-color;
-  color: $secondary-color;
-  padding: 20px;
-  text-align: center;
+  @include nav-parts;
 }
 
 footer {
-  background-color: $primary-bg-color;
-  color: $secondary-color;
-  padding: 10px;
-  text-align: center;
+  @include nav-parts;
+  font-size: 0.9rem;
+
+  span {
+    display: block;
+    margin: 5px 0;
+  }
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -72,6 +80,15 @@ section {
   height: 100%;
   @include flex-settings(column, center, initial);
   padding: 50px 30px;
+  flex: 1;
+}
+
+.main-links {
+  font-weight: bold;
+  text-align: center;
+  font-family: $font-family-header;
+  margin: 15px 0;
+  font-size: 1.1rem;
 }
 
 img {
@@ -87,6 +104,16 @@ ul {
 
   li {
     margin: 10px 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $primary-bg-color;
+
+  &:hover {
+    color: $primary-hover-color;
+    transition: $hover-transition;
   }
 }
 
